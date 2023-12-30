@@ -11,7 +11,7 @@ import { NzResultModule } from 'ng-zorro-antd/result';
   styleUrl: './internal-server-error-page.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    class: 'flex min-h-screen w-screen items-center justify-center',
+    class: 'flex min-h-full w-screen items-center justify-center',
   },
 })
 export class InternalServerErrorPageComponent {}

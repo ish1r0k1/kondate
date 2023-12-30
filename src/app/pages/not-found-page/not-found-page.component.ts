@@ -11,7 +11,7 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
   styleUrl: './not-found-page.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    class: 'flex min-h-screen w-screen items-center justify-center',
+    class: 'flex min-h-full w-screen items-center justify-center',
   },
 })
 export class NotFoundPageComponent {}
