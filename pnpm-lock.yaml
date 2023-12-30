@@ -25,6 +25,12 @@ dependencies:
   '@angular/router':
     specifier: ^17.0.0
     version: 17.0.0(@angular/common@17.0.0)(@angular/core@17.0.0)(@angular/platform-browser@17.0.0)(rxjs@7.8.0)
+  '@ngx-formly/core':
+    specifier: ^6.2.2
+    version: 6.2.2(@angular/forms@17.0.0)(rxjs@7.8.0)
+  '@ngx-formly/ng-zorro-antd':
+    specifier: ^6.2.2
+    version: 6.2.2(@ngx-formly/core@6.2.2)(ng-zorro-antd@17.1.0)
   ng-zorro-antd:
     specifier: 17.1.0
     version: 17.1.0(@angular/animations@17.0.0)(@angular/common@17.0.0)(@angular/core@17.0.0)(@angular/forms@17.0.0)(@angular/platform-browser@17.0.0)(@angular/router@17.0.0)(rxjs@7.8.0)
@@ -2220,6 +2226,28 @@ packages:
       typescript: 5.2.2
       webpack: 5.89.0(esbuild@0.19.5)
     dev: true
+
+  /@ngx-formly/core@6.2.2(@angular/forms@17.0.0)(rxjs@7.8.0):
+    resolution: {integrity: sha512-tG7TT0SsxlEs8ipndxiqO6xX06RCW81S4flPj+ByDgUACtZE/l+l8PEmjvJRIEv5dGJQ73cfxbnVmBoZR/FrEw==}
+    peerDependencies:
+      '@angular/forms': '>=13.2.0'
+      rxjs: ^6.5.3 || ^7.0.0
+    dependencies:
+      '@angular/forms': 17.0.0(@angular/common@17.0.0)(@angular/core@17.0.0)(@angular/platform-browser@17.0.0)(rxjs@7.8.0)
+      rxjs: 7.8.0
+      tslib: 2.6.2
+    dev: false
+
+  /@ngx-formly/ng-zorro-antd@6.2.2(@ngx-formly/core@6.2.2)(ng-zorro-antd@17.1.0):
+    resolution: {integrity: sha512-f0uPgs3oC+OB5axvqnBt9oo/LwwOj9i2VTX+Y+tI3d/oH5RmudIXPJTzp6fOX88jYKkgtOkEXfPm2K+pzLpdcw==}
+    peerDependencies:
+      '@ngx-formly/core': 6.2.2
+      ng-zorro-antd: '>=13.0.0'
+    dependencies:
+      '@ngx-formly/core': 6.2.2(@angular/forms@17.0.0)(rxjs@7.8.0)
+      ng-zorro-antd: 17.1.0(@angular/animations@17.0.0)(@angular/common@17.0.0)(@angular/core@17.0.0)(@angular/forms@17.0.0)(@angular/platform-browser@17.0.0)(@angular/router@17.0.0)(rxjs@7.8.0)
+      tslib: 2.6.2
+    dev: false
 
   /@ngx-formly/schematics@6.2.2:
     resolution: {integrity: sha512-L0w5vhh9K3EMxX1Cukrvgc7HJNXRQhyhSHwJTNghj1oUURncoMSIKaqGvRIPmLvck7sh5yVBX3rSWi11A3tq+g==}
@@ -5092,7 +5120,7 @@ packages:
     dependencies:
       copy-anything: 2.0.6
       parse-node-version: 1.0.1
-      tslib: 2.3.0
+      tslib: 2.6.2
     optionalDependencies:
       errno: 0.1.8
       graceful-fs: 4.2.11
@@ -6383,7 +6411,7 @@ packages:
   /rxjs@7.8.1:
     resolution: {integrity: sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg==}
     dependencies:
-      tslib: 2.3.0
+      tslib: 2.6.2
     dev: true
 
   /safe-buffer@5.1.2:
