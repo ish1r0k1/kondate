@@ -1,4 +1,4 @@
-import { object, string, enum_, url, array, optional } from 'valibot';
+import { object, string, enum_, url, array, optional, Output } from 'valibot';
 import { TagSchema } from './tag';
 
 export const CuisineType = {
@@ -15,3 +15,5 @@ export const CuisineSchema = object({
   recipeUrl: optional(string([url()])),
   tags: array(TagSchema),
 });
+
+export type CuisineOutput = Output<typeof CuisineSchema>;

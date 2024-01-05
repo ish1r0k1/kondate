@@ -1,4 +1,4 @@
-import { object, enum_, array } from 'valibot';
+import { object, enum_, array, Output } from 'valibot';
 import { CuisineSchema } from './consine';
 
 export const MealType = {
@@ -12,3 +12,5 @@ export const MealSchema = object({
   cuisines: array(CuisineSchema),
   type: enum_(MealType),
 });
+
+export type MealOutput = Output<typeof MealSchema>;
