@@ -1,4 +1,4 @@
-class RouterUtil {
+export class RouterUtil {
   static Configuration = {
     Weeks: 'weeks',
     Recipes: 'recipes',

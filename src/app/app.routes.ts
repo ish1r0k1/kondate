@@ -24,10 +24,10 @@ export const routes: Routes = [
           ),
       },
       {
-        path: 'weeks',
+        path: 'recipes',
         loadComponent: () =>
-          import('./pages/weeks-page/weeks-page.component').then(
-            (c) => c.WeeksPageComponent,
+          import('./pages/recipes-page/recipes-page.component').then(
+            (c) => c.RecipesPageComponent,
           ),
       },
       {
