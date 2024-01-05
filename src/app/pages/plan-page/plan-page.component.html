@@ -1,1 +1,12 @@
-<p>plan-page works!</p>
+@if (loading$ | async; as loading) {
+  <p>{{ loading }}</p>
+} @else {
+  <div class="px-10 mt-6">
+    <h1 class="text-2xl font-bold">
+      {{ (week$ | async)?.period?.start | date: "YYYY/MM/dd" }}
+    </h1>
+  </div>
+  <div class="px-10 mt-4">
+    <p>{{ week$ | async | json }}</p>
+  </div>
+}
